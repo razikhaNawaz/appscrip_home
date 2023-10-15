@@ -1,0 +1,89 @@
+/* Section1.module.css */
+.parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(118, 26, 129);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Align children in a column on smaller screens */
+    align-items: center;
+    width: 70%; /* Reduce the width to make it responsive */
+    height: 20rem;
+    margin-top: 20px;
+    border:3px solid rgb(9, 10, 10);
+    color: rgb(23, 154, 3);
+    border-radius: 5px;
+    margin-right: 100px;
+    margin-left: 120px;
+  }
+  
+  .containerParagraph {
+  
+    margin-left: 10rem; /* Keep margin for larger screens */
+    align-items: center;
+    text-align: center; /* Center text for smaller screens */
+    width: 50%; /* Occupy 50% width on smaller screens */
+    padding: 20px;
+    
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .input input {
+   
+    padding: 15px;
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(158, 165, 172);
+    align-items: center;
+    margin-top: 5px;;
+  }
+  
+  .child1 button {
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .child2 button{
+    margin-right: 50%;
+    margin-left: 8rem;
+    height:30px;
+    width:150px;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+   
+  }
+  .child2 p{
+    margin-left: 80px;
+  }
+  
+  
+  
+  /* Media query for smaller screens (e.g., max-width: 768px) */
+  @media (max-width: 768px) {
+    .containerParagraph {
+      margin-left: 0; /* Remove the left margin for smaller screens */
+    }
+    .parent {
+      flex-direction: column; /* Stack elements in a column layout for smaller screens */
+    }
+  }
+  

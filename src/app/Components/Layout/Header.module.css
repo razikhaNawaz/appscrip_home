@@ -1,0 +1,69 @@
+/* Header.module.css */
+.header {
+    background-color: rgb(6, 6, 6);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 5rem; /* Width will be 100% by default */
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+}
+
+.navLinks a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.programIcon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+.authLinks {
+    display: flex;
+    align-items: center;
+}
+
+.signupButton {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Burger button for mobile */
+.burgerButton {
+    display: none; /* Hide the burger button by default */
+}
+
+/* Media query for mobile */
+@media (max-width: 767px) {
+    .navLinks,
+    .authLinks {
+        display: none;
+    }
+
+    .burgerButton {
+        display: block; /* Display the burger button on mobile screens */
+    }
+
+    .header {
+        padding: 10px 20px; /* Adjust padding for mobile screens as needed */
+    }
+}
+
+  

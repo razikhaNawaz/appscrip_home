@@ -1,10 +1,13 @@
-import Image from 'next/image'
+
 import styles from './page.module.css'
+import Header from './Components/Layout/Header'
+import Section1 from './Components/Layout/Section1'
 
 export default function Home() {
   return (
     <div>
-      <h1>hello world</h1>
+      <Header />
+      <Section1 />
     </div>
   )
 }
