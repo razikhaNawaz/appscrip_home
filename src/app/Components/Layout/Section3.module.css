@@ -1,0 +1,48 @@
+/* Base styles for desktop layout */
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(94, 8, 113);
+}
+
+.parent h1 {
+    font-size: 40px;
+    margin-top: 0rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.parent button {
+    width: 10vw;
+    height: 10vh;
+    border-radius: 3rem;
+    color: white;
+    background-color: blueviolet;
+}
+
+/* Media query for mobile layout */
+@media (max-width: 767px) {
+    .parent {
+        height: auto;
+        align-items: center; 
+    }
+
+    .parent h1 {
+        font-size: 24px;
+        align-items: center; 
+    }
+    .parent p{
+        align-items: center;
+    }
+
+    .parent button {
+        width: 15vw;
+        height: 10vh;
+        border-radius: 3rem;
+    }
+}
