@@ -1,10 +1,14 @@
 import React from "react";
 import classes from "./Section1.module.css";
+// import hero from "public/hero.png";
+// import Image from "next/image";
 
 const Section1 = () => {
   return (
     <div>
+      
       <div className={classes.parent}>
+       {/* <Image src={hero} alt='cloud' /> */}
         <div className={classes.containerParagraph}>
           <h1>A Creator’s Paradise</h1>
           <p>Where Creativity Meets Success</p>
@@ -52,7 +56,8 @@ const Section1 = () => {
             </div>
           </form>
         </div>
-      </div>
+        
+      </div> 
     </div>
   );
 };

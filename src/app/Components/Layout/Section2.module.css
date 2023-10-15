@@ -1,0 +1,70 @@
+/* Base styles for desktop layout */
+.container {
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.child1, .child2 {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    column-gap: 1rem;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Additional styling for text size */
+.chi1 h1, .chi2 h1 {
+    font-size: 18px;
+}
+
+.chi1 p, .chi2 p {
+    font-size: 14px;
+}
+.chi1, .chi2, .c1, .c2, .c3 {
+    border:1px solid grey;
+    border-radius: 3 rem;
+}
+
+/* Media query for mobile layout */
+@media (max-width: 767px) {
+    .container {
+        padding: 0.5rem; /* Reduce padding for mobile layout */
+    }
+
+    .child1, .child2 {
+        display: flex;
+        flex-direction: column; /* Change to column layout for mobile */
+        padding: 0.5rem; /* Reduce padding for mobile layout */
+        align-items: center;
+        text-align: center;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+        justify-content: center;
+    }
+
+    .chi1, .chi2, .c1, .c2, .c3 {
+        border:1px solid grey;
+        border-radius: 2rem;
+        margin-bottom: 0.5rem;
+        width: 100%; /* Full width on mobile */
+    }
+}
+
