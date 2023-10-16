@@ -8,7 +8,7 @@ const Section3 = () => {
             <p>Don't miss out on ABC’s Incredible features and Opportunities.</p>
         
         
-            <h1>Join us today and unlock your full potential as a creator</h1>
+            <h1>Join us today and unlock your full <br />potential as a creator</h1>
         
         <button>Join now</button>
         

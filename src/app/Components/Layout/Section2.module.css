@@ -1,6 +1,6 @@
 /* Base styles for desktop layout */
 .container {
-    border: 1px solid red;
+    
     width: 100%;
     display: flex;
     flex-direction: column;

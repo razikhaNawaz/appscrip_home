@@ -1,89 +1,92 @@
-/* Section1.module.css */
 .parent {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(118, 26, 129);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.8;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   
-  .container {
-    display: flex;
-    flex-direction: column; /* Align children in a column on smaller screens */
-    align-items: center;
-    width: 70%; /* Reduce the width to make it responsive */
-    height: 20rem;
-    margin-top: 20px;
-    border:3px solid rgb(9, 10, 10);
-    color: rgb(23, 154, 3);
-    border-radius: 5px;
-    margin-right: 100px;
-    margin-left: 120px;
-  }
   
-  .containerParagraph {
+  height:100vh;
+  width:100vw;
+}
+
+.child1 {
   
-    margin-left: 10rem; /* Keep margin for larger screens */
-    align-items: center;
-    text-align: center; /* Center text for smaller screens */
-    width: 50%; /* Occupy 50% width on smaller screens */
-    padding: 20px;
-    
-  }
-  
-  .input {
-    display: flex;
+ 
+  margin-left: 1rem;
+  height: 15rem;
+  width: 35rem;
+  color: aliceblue;
+  z-index: 5;
+}
+
+.child2 {
+ 
+  height: 30rem;
+  margin-left: 10rem;
+  margin-right: 5rem;
+  width: 35rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  background-color: rgb(37, 3, 69);
+  color: aliceblue;
+  z-index: 5;
+}
+
+.child2 .button,
+.child2 .input,
+.child2 .p {
+  margin-top: 5rem;
+}
+
+.child2 button {
+  border: 1px solid green;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 2rem;
+  background-color: blue;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.child2 input {
+  width: 20rem;
+  height: 2rem;
+  background-color: rgb(37, 3, 69);
+  margin-left: 1rem;
+  /* margin-top: 1rem; */
+}
+
+.child2 .p {
+  margin-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .content {
     flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
   }
-  
-  .input input {
+
+  .child1 {
    
-    padding: 15px;
-    width: 200px;
-    border-radius: 5px;
-    border: none;
-    background-color: rgb(158, 165, 172);
-    align-items: center;
-    margin-top: 5px;;
+    width: auto;
+    height:auto;
+    max-width: 90vw; /* Set a maximum width to ensure content doesn't overflow */
   }
-  
-  .child1 button {
-    align-items: center;
-    margin-top: 20px;
+
+  .child2 {
+    margin: 2rem 0;
+    width: auto;
+    max-width: 90vw; /* Set a maximum width to ensure content doesn't overflow */
+    overflow-y: scroll;
+     /* Enable vertical scrolling for child2 if its content exceeds the screen size */
   }
-  
-  .child2 button{
-    margin-right: 50%;
-    margin-left: 8rem;
-    height:30px;
-    width:150px;
-    border-radius: 3px;
-    text-align: center;
-    align-items: center;
-    margin-top: 5px;
-   
-  }
-  .child2 p{
-    margin-left: 80px;
-  }
-  
-  
-  
-  /* Media query for smaller screens (e.g., max-width: 768px) */
-  @media (max-width: 768px) {
-    .containerParagraph {
-      margin-left: 0; /* Remove the left margin for smaller screens */
-    }
-    .parent {
-      flex-direction: column; /* Stack elements in a column layout for smaller screens */
-    }
-  }
-  
+}
