@@ -5,12 +5,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    height: 5rem; /* Width will be 100% by default */
+    padding: 1rem;
+    width: 100%; /* Set the width to 100% */
+    
+    height: 30px; /* You can adjust the height as needed */
+    
 }
 
+
 .logo {
-    font-size: 20px;
+    font-size: 30px;;
 }
 
 .navLinks {
@@ -58,11 +62,11 @@
     }
 
     .burgerButton {
-        display: block; /* Display the burger button on mobile screens */
+        display: block; 
     }
 
     .header {
-        padding: 10px 20px; /* Adjust padding for mobile screens as needed */
+        padding: 8px;
     }
 }
 

@@ -1,0 +1,34 @@
+.parent{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    background-color: black;
+    color: bisque;
+    width:100vw;
+    height:auto;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .parent {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        height: auto;
+        
+    }
+    .child1 {
+        display: none; 
+        
+        
+        
+    }
+    .child2{
+        margin-bottom: 10 rem;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* .parent .child1, .child2, .child3, .child4{
+border:1px solid red;
+} */

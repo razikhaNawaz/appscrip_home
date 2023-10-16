@@ -8,6 +8,7 @@
     width: 100vw;
     height: 80vh;
     background-color: rgb(41, 6, 49);
+    border-radius: 2 rem;
 }
 
 .parent h1 {
@@ -28,6 +29,7 @@
     .parent {
         height: auto;
         align-items: center; 
+        justify-content: center;
     }
 
     .parent h1 {
@@ -42,5 +44,6 @@
         width: 15vw;
         height: 10vh;
         border-radius: 3rem;
+        border-radius: 2 rem;
     }
 }
