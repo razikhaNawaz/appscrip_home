@@ -7,7 +7,7 @@
     color:aliceblue;
     width: 100vw;
     height: 80vh;
-    background-color: rgb(29, 27, 29);
+    background-color: rgb(61, 2, 61);
 }
 
 .parent h1 {
@@ -16,7 +16,8 @@
     align-items: center;
     justify-content: center;
     font-size: 48px;
-    margin-left: 5rem;
+    margin-left: 3rem;
+    margin-top: 3rem;
 }
 
 .parent button {
@@ -27,7 +28,7 @@
     background-color: rgb(107, 5, 110);
 }
 .parent p{
-    margin-left: 1rem;
+    margin-left: 2rem;
 }
 
 /* Media query for mobile layout */
@@ -43,6 +44,7 @@
     }
     .parent p{
         align-items: center;
+        font-size: 12px;
     }
 
     .parent button {

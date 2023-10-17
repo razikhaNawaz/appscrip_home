@@ -19,7 +19,9 @@
     }
     .child1 {
         display: none; 
-        
+        align-items: center;
+        justify-content: center;
+
         
         
     }
@@ -27,6 +29,8 @@
         margin-bottom: 10 rem;
         align-items: center;
         justify-content: center;
+        margin-left: 1rem;
+        row-gap: 1px;
     }
 }
 /* .parent .child1, .child2, .child3, .child4{
